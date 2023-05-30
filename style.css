@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --primary-very-dark-magenta: hsl(300, 43%, 22%);
+    --primary-soft-pink: hsl(333, 80%, 67%);
+
+    /* neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+main{
+    background-color: white;
+    font-family: 'League Spartan', sans-serif;
+
+    padding: 10px;
+    
+    display: grid;
+    place-items: center;
+    
+    gap: 1rem;
+}
+
+.top-row{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.intro-header{
+    color: var(--primary-very-dark-magenta);
+    font-weight: 700;
+    padding:1.6rem;
+
+}
+
+.intro-summary{
+    color: var(--dark-grayish-magenta);
+    padding:1.6rem;
+}
+
+.reviews {
+
+    display: grid;
+    place-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.6rem;
+
+    color: var(--primary-very-dark-magenta);
+    font-weight: 700;
+
+}
+
+.review-card{
+    background-color: var(--light-grayish-magenta);
+    padding-top: 1rem;
+
+    gap: 1rem;
+
+    width: 20rem;
+    margin-bottom: 0.1rem;
+    border-radius: 10px;
+}
+
+.testimonials{
+    display: grid;
+    place-items: center;
+}
+
+.card{
+    background-color: var(--primary-very-dark-magenta);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 10px;
+
+    width: 60%;
+    padding: 18px;
+
+    margin-bottom: 1.6rem;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6rem;
+    margin-left: 1rem;
+}
+
+.card-profile{
+    border-radius: 50%;
+}
+
+.card-buyer{
+    color: var(--primary-soft-pink);
+}
+
+
+
+@media screen and (min-width: 720px){
+
+    .top-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .intro{
+        width: 50%;
+    }
+
+    .reviews{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        position: relative;
+        flex-basis: 50%;
+    }
+
+    .review-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        place-items: center;
+        width: 25rem;
+    }
+
+    .review-card-1{
+        margin-left: 0px;
+    }
+
+    .review-card-2{
+        margin-left: 100px;
+    }
+
+    .review-card-3{
+        margin-left: 200px
+    }
+
+
+    .testimonials{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 1.6rem;
+    }    
+    
+    .card{
+        width: 30%;
+        max-width: 20rem;
+        padding: 30px;
+    }
+
+    .testimony-card-1{
+        margin-top: 0px;
+    }
+
+    .testimony-card-2{
+        margin-top: 20px;
+    }
+
+    .testimony-card-3{
+        margin-top: 40px
+    }
+    
+    .card-header{
+    
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+}
